@@ -1,15 +1,9 @@
-# Folio 0.9.0-beta.2 — unsigned API-only beta
+# Folio 0.9.0-beta.3 — bundle signature repair, API-only beta
 
-An early test release for Apple Silicon Macs running macOS 14 or later.
+Fixes the incomplete application bundle signature in beta.2 that could cause a damaged-app warning even when the download checksum matched. Electron frameworks/helpers and the outer app now have a complete ad-hoc signature. The packaging and installer checks require whole-bundle signature integrity; the separate official Office engine is preserved unchanged.
 
-Browse UNC Canvas materials, assignments and announcements; open available past submissions and feedback; choose individual sources for AI analysis and reopen answer references. Selected originals are read directly, live-status questions query current sources, and local keyword/semantic search finds material when you do not know the file.
+**This is an unsigned-by-Apple test build: it is not Developer ID-signed and has not been notarized.** Ad-hoc integrity does not grant automatic Gatekeeper approval. macOS may still block first launch; follow the per-app steps in [Getting started](https://github.com/Bensssonxx/folio-releases/blob/main/GETTING_STARTED.md) only if you trust the verified download. Do not disable global security protections. Stop and report a persistent damaged/malware warning.
 
-**This app is unsigned and has not been notarized by Apple.** macOS may block its first launch. Follow Getting started only if you trust and verify the download; do not disable Gatekeeper globally. A checksum is not an Apple signature.
+Apple Silicon, macOS 14+. Bring your own API key with separate API billing. ChatGPT subscription login remains disabled. Existing data, internal identity and legacy credentials are preserved; quit the old app before opening this version. No changes to course/feedback selection, AI context or reading behavior.
 
-**Bring your own API key.** API billing is separate from a ChatGPT subscription. Subscription login and inference are disabled in this public beta. Existing local connection data is preserved.
-
-Existing CourseVault users: back up, quit the old app and then open Folio. Your data location and credential identity remain compatible. Refresh Calendar after upgrading. Keep the previous app until you have verified the upgrade.
-
-The installer includes the official LibreOffice 26.2.6.3 presentation engine and collected third-party notices/source access. Folio's application source remains private. Do not upload private course material, chats or credentials in bug reports.
-
-Known limits: some annotations/external feedback require imported exports; source coverage and AI latency vary; the first system file picker may be slow. Other Macs, managed-device policies and real API accounts may behave differently. This is a pre-release for testing, not a stable 1.0 release.
+The installer includes the same official LibreOffice 26.2.6.3 engine, third-party notices and source access. Folio implementation source remains private. Local synthetic acceptance does not substitute for a second Mac or fresh real API account.

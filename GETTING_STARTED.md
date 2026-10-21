@@ -1,12 +1,12 @@
 # Getting started with Folio
 
-This guide is for the unsigned API-only 0.9.0-beta.2 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
+This guide is for the API-only, ad-hoc signed 0.9.0-beta.3 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
 
 1. Download and install
 
 Get the DMG and its SHA-256 file from [Releases](https://github.com/Bensssonxx/folio-releases/releases). Compare the download's checksum with the release asset. A checksum checks file integrity; it is not an Apple signature or notarization. Open the DMG, drag Folio to Applications and launch it there.
 
-If macOS blocks this unsigned app, only proceed if you trust its source and integrity. After trying to open it, System Settings → Privacy & Security may offer Open Anyway for this app; confirm the next prompt. See [Apple's instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally. If macOS reports damage or malware, stop and report the exact message. Managed Macs may prevent installation.
+If macOS blocks this app without Developer ID/notarization, only proceed if you trust its source and integrity. After trying to open it, System Settings → Privacy & Security may offer Open Anyway for this app; confirm the next prompt. See [Apple's instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally. If macOS reports damage or malware, stop and report the exact message. Managed Macs may prevent installation.
 
 2. Connect UNC Canvas
 
@@ -37,3 +37,5 @@ Settings shows local storage and the data folder. Removing a course hides it wit
 Expired Canvas tokens require reconnecting. API errors require checking the account's key, billing, model access and limits. Stop remains available during long answers; network/model time varies. Unsupported/inaccessible sources are disclosed. A changed original can invalidate an old reference.
 
 Report version/build, error category and reproduction steps with synthetic data in [Issues](https://github.com/Bensssonxx/folio-releases/issues). Do not post credentials, private course materials or full chats. Follow [Security](SECURITY.md) for vulnerabilities.
+
+Beta.3 corrects the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. A second Mac has not yet verified this release.

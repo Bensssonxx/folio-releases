@@ -1,4 +1,13 @@
-# Release notes
+# Changelog
+
+## 0.9.0-beta.3 — 2026-10-21
+
+- Repair the whole macOS bundle signature and resource seal; preserve the official Office engine and reading binaries.
+- Enforce complete signature integrity for every beta, packaging audit and DMG creation; distinguish this from missing Developer ID/notarization.
+- Add rejection checks for the old invalid package and modified sealed resources.
+- No change to saved data, per-Send private selection or API-only policy.
+
+Beta.2 had an incomplete application signature and should not be installed. Its artifacts and launch-issue notice are retained for traceability.
 
 ## 0.9.0-beta.2 — unsigned API-only pre-release
 
