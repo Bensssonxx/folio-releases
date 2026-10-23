@@ -4,9 +4,9 @@ Your courses, ready to talk about.
 
 Folio is a local-first Mac workspace for Canvas materials, assignments, instructor feedback and AI conversations. Answers link back to the original material. Saving your own copies is optional.
 
-**0.9.0-beta.5 — ad-hoc signed, unnotarized pre-release (no Developer ID).** This is an early test build for Apple Silicon Macs running macOS 14 or later. Continue with ChatGPT is available as a preview for eligible accounts and workspaces. The API-key option remains separately billed.
+**Folio 1.0.0 — first stable release for Apple Silicon Macs running macOS 14 or later.** The app has an ad-hoc integrity signature, without Apple Developer ID or notarization. Continue with ChatGPT is available as a preview for eligible accounts and workspaces. The API-key option remains separately billed.
 
-[Download the test installer](https://github.com/Bensssonxx/folio-releases/releases) · [Getting started](GETTING_STARTED.md) · [Privacy](PRIVACY.md) · [Release notes](CHANGELOG.md)
+[Download Folio 1.0.0](https://github.com/Bensssonxx/folio-releases/releases/tag/v1.0.0) · [Getting started](GETTING_STARTED.md) · [Privacy](PRIVACY.md) · [Release notes](CHANGELOG.md)
 
 ## What you can do
 
@@ -18,7 +18,7 @@ Folio is a local-first Mac workspace for Canvas materials, assignments, instruct
 
 You need UNC Canvas access, internet for Canvas/AI, and an eligible ChatGPT connection or your own supported API account. An API key is billed separately from a ChatGPT subscription. You choose a model available to that API account; model availability and usage limits depend on the provider.
 
-## Installing this beta
+## Installation and updates
 
 The app is not Developer ID-signed or notarized by Apple. macOS may block its first launch. Only if you trust the download and have verified it, follow the per-app instructions in [Getting started](GETTING_STARTED.md). Managed Macs may not permit an exception. No global security-setting changes are required by Folio.
 
@@ -31,3 +31,5 @@ This repository contains downloads and public documentation. Folio application s
 This bundle has a complete ad-hoc integrity signature. It is not Developer ID-signed or notarized, so macOS does not automatically trust it. The earlier beta.2 package had an incomplete bundle seal and should not be installed.
 
 PowerPoint page support is optional: Folio asks before a one-time 298 MB download (about 798 MB installed) from The Document Foundation. PDFs, plain text and Word text work without it. The component is shared across Folio data spaces and stays separate from course databases.
+
+Updates are manual. Version 1.0.0 carries the beta.5 feature set into the stable channel, with corrected in-app release information. Fresh-account AI access and installation on a second Mac have not been independently verified. See [Release notes](RELEASE_NOTES.md) for the tested scope.

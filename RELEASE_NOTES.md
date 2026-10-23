@@ -1,11 +1,23 @@
-# Folio 0.9.0-beta.5 — smaller installer, optional PowerPoint support
+# Folio 1.0.0 — first stable release
 
-The complete Office engine is now an optional first-use download rather than part of the main application. Opening PowerPoint slide pages asks before downloading 298 MB from The Document Foundation, verifies the pinned checksum, official publisher and macOS trust, then installs about 798 MB in a shared local components folder. Progress has Cancel; Not now keeps it uninstalled. Installation needs about 1.5 GB free temporary space. PDFs, plain text and Word text work without it. Later uses and data spaces reuse the installed version.
+Folio brings Canvas courses, materials, assignments, available past submissions and instructor feedback into one local Mac workspace. Preview personal records in the app and choose individual items for each AI request. Current-status questions check live sources; selected originals are read directly; local keyword and semantic search helps find material when its location is unknown. Answers link back to their sources.
 
-This reduces initial installation size. Installing the optional engine later still uses its disk space. Settings shows Document support separately. The converter is not a database; course originals, extracted pages and search indexes have separate storage.
+## Install or upgrade
 
-ChatGPT sign-in preview and the explicitly billed API-key option remain. OpenAI decides account/workspace/app eligibility; errors never silently switch to API billing. Existing data and credential identity remain compatible. Quit the old app before installing. Source stays private; this repository contains documentation and installers only.
+Apple Silicon Mac, macOS 14 or later. Quit every old Folio or CourseVault copy, open the DMG, drag Folio to Applications and open it there. Existing local data, restored profiles and credential identity are preserved. Reinstalling is not a data reset. Make a local backup before upgrading. Updates are manual through GitHub Releases.
 
-Apple Silicon/macOS14+. Complete ad-hoc integrity signature, no Apple Developer ID or notarization. macOS may require explicit per-app approval. Validation covers isolated component failure/cancel paths, real official component download and synthetic PPTX/DOCX reading, UI progress/cancel, exact package and offline launch. Fresh real-account authorization and a second Mac remain unverified.
+This release has a complete ad-hoc integrity signature, but no Apple Developer ID or notarization. macOS may require per-app approval in Privacy & Security; managed Macs may disallow it. A checksum verifies the downloaded bytes, not Apple trust. Do not disable global security protections or remove security attributes to bypass an error. See [Getting started](GETTING_STARTED.md).
 
-Background indexing continues with readable materials while optional support is absent. After installation, failed slide indexes are retried locally; prepared originals are reused.
+## AI and document support
+
+Continue with ChatGPT remains a preview for accounts, workspaces and apps eligible under OpenAI's service. A subscription alone does not guarantee access. The API-key option is explicitly selected and separately billed; subscription failures never silently switch to API billing. Connecting or previewing a file alone does not send course content. Review each course's sharing settings and AI rules.
+
+PDFs, plain text and Word text work without the optional converter. Opening PowerPoint pages asks before a verified 298 MB download from The Document Foundation (about 798 MB installed, about 1.5 GB temporary free space needed). Not now and Cancel are available. The same version is shared across local data spaces; installation retries failed slide indexes without redownloading originals. Settings counts Document support separately from course databases.
+
+## Validation and known limits
+
+Version 1.0.0 preserves beta.5's reading and AI implementations. That baseline passed 18 optional-component tests, a real official-component download and publisher/trust verification, synthetic PPTX/DOCX reading and failed-index recovery, progress/cancel UI, exact package checks and an isolated final-app offline launch. The stable package additionally verifies release identity, empty-profile onboarding, synthetic upgrade persistence, embedded help, window sizes, bundle integrity and the DMG. These checks use synthetic profiles and no real course or AI requests.
+
+Fresh real-account authorization, answer quality with a real course and installation on a second Mac remain unverified. Some external-system feedback and Canvas annotations require importing an export. The first macOS file picker can be slow on some Macs. Verify AI answers and inferred dates against original sources. Stop and report an integrity, damaged-app or malware warning.
+
+This is an independent project, not an official UNC, Canvas or OpenAI application. This repository contains installers and public documentation only; Folio source remains private. See [Privacy](PRIVACY.md), [Third-party notices](THIRD_PARTY_NOTICES.md), [Sources](SOURCES.md) and [Security](SECURITY.md).

@@ -1,6 +1,6 @@
 # Getting started with Folio
 
-This guide is for the ad-hoc signed 0.9.0-beta.5 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
+This guide is for the ad-hoc signed Folio 1.0.0 release. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
 
 1. Download and install
 
@@ -40,7 +40,7 @@ Expired Canvas tokens require reconnecting. ChatGPT authorization or eligibility
 
 Report version/build, error category and reproduction steps with synthetic data in [Issues](https://github.com/Bensssonxx/folio-releases/issues). Do not post credentials, private course materials or full chats. Follow [Security](SECURITY.md) for vulnerabilities.
 
-Beta.3 corrected the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. A second Mac has not yet verified this release.
+Beta.3 corrected the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. Installation on a second Mac has not been independently verified.
 
 ## Optional PowerPoint page support
 

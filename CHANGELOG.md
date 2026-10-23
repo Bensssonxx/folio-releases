@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 — 2026-10-23
+
+- First stable release, based on the beta.5 feature set: Canvas courses, local material search, assignment/feedback previews and per-request AI source selection.
+- Keep browser ChatGPT sign-in as an eligibility-dependent preview and API keys as an explicit, separately billed choice.
+- Keep the smaller base installer and verified optional PowerPoint page support. Preserve existing data, profile and credential identity.
+- Correct the in-app distribution label and publish installation, upgrade, privacy and support guidance for the stable channel. Updates remain manual.
+- Complete ad-hoc integrity signature; no Apple Developer ID or notarization. Second-Mac installation and fresh real-account AI access remain unverified.
+
 ## 0.9.0-beta.5 — 2026-10-23
 
 - Remove the complete Office engine from the main installer. Offer verified, cancellable first-use PowerPoint page support (298 MB download, about 798 MB installed), shared across local data spaces.

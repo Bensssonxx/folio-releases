@@ -1,6 +1,6 @@
 # Privacy and AI sharing
 
-Updated 2026-10-23 for beta.4.
+Updated 2026-10-23 for Folio 1.0.0.
 
 Folio stores its course catalog, prepared originals, keyword/semantic indexes, chats, attachments and history on this Mac. Personal Save and automatic Chat preparation are separate. External workspace folders stay where you selected them. Backups can contain private course/chat data; protect them.
 
