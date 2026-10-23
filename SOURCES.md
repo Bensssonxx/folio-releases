@@ -4,7 +4,7 @@ These are sources for third-party components, separate from Folio's proprietary 
 
 ## LibreOffice presentation engine
 
-Version: 26.2.6.3, ARM64. Official binary build ID and source tag commit: 8221e31b3ac356a1623c672912a3d2b492f7e3d1. The installed directory is named LibreOfficeDev.app for compatibility with the app's existing lookup; its contents are the official stable release, not a development build.
+Version: 26.2.6.3, ARM64. Official binary build ID and source tag commit: 8221e31b3ac356a1623c672912a3d2b492f7e3d1. The converter is downloaded only after first-use consent and stored separately as LibreOfficeDev.app for compatibility. It is the unchanged official stable release, verified before use; the main installer does not bundle the converter.
 
 - [Official ARM64 binary](https://download.documentfoundation.org/libreoffice/stable/26.2.6/mac/aarch64/LibreOffice_26.2.6_MacOS_aarch64.dmg), SHA-256: `94bb3248df074c225490a8a6d1d9dc87c7d6783dbb7a8e9f0d0c3d94348552af`.
 - [Core source archive](https://download.documentfoundation.org/libreoffice/src/26.2.6/libreoffice-26.2.6.3.tar.xz), SHA-256: `3a2570aa7087bf8e0cbdf49ac5bd0e452c2025274af99e07882daa104c5685bd`.

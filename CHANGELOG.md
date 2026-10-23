@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0-beta.5 — 2026-10-23
+
+- Remove the complete Office engine from the main installer. Offer verified, cancellable first-use PowerPoint page support (298 MB download, about 798 MB installed), shared across local data spaces.
+- Keep PDF, plain text and Word text reading independent of the optional component. Count installed document support separately in local storage.
+- Preserve ChatGPT/API connections, data compatibility and explicit private-material sharing. Stop prevents postponed work from restarting after installation.
+
 ## 0.9.0-beta.4 — 2026-10-23
 
 - Restore Continue with ChatGPT in both the local test and public build, using direct browser authorization and account-provided model access.

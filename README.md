@@ -4,7 +4,7 @@ Your courses, ready to talk about.
 
 Folio is a local-first Mac workspace for Canvas materials, assignments, instructor feedback and AI conversations. Answers link back to the original material. Saving your own copies is optional.
 
-**0.9.0-beta.4 — ad-hoc signed, unnotarized pre-release (no Developer ID).** This is an early test build for Apple Silicon Macs running macOS 14 or later. Continue with ChatGPT is available as a preview for eligible accounts and workspaces. The API-key option remains separately billed.
+**0.9.0-beta.5 — ad-hoc signed, unnotarized pre-release (no Developer ID).** This is an early test build for Apple Silicon Macs running macOS 14 or later. Continue with ChatGPT is available as a preview for eligible accounts and workspaces. The API-key option remains separately billed.
 
 [Download the test installer](https://github.com/Bensssonxx/folio-releases/releases) · [Getting started](GETTING_STARTED.md) · [Privacy](PRIVACY.md) · [Release notes](CHANGELOG.md)
 
@@ -29,3 +29,5 @@ Folio is an independent student project, not an official UNC, Canvas or OpenAI p
 This repository contains downloads and public documentation. Folio application source remains private. Third-party notices and required source access are described in [Third-party software](THIRD_PARTY_NOTICES.md) and [Sources](SOURCES.md). Do not upload course files, credentials, chat histories or private diagnostic records here.
 
 This bundle has a complete ad-hoc integrity signature. It is not Developer ID-signed or notarized, so macOS does not automatically trust it. The earlier beta.2 package had an incomplete bundle seal and should not be installed.
+
+PowerPoint page support is optional: Folio asks before a one-time 298 MB download (about 798 MB installed) from The Document Foundation. PDFs, plain text and Word text work without it. The component is shared across Folio data spaces and stays separate from course databases.

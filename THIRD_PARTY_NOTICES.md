@@ -17,3 +17,5 @@ License highlights and source access:
 See [Sources](SOURCES.md) for exact versions, links and archive hashes. This index does not replace the full component licenses inside the installer.
 
 Portions of this software are copyright © The FreeType Project (www.freetype.org). All rights reserved.
+
+In beta.5, LibreOffice is optional support downloaded directly from the publisher after consent. Its official licenses remain in the downloaded component; source links and notices remain available here.

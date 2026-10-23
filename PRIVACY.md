@@ -29,3 +29,7 @@ New private-analysis history is stored separately so older builds cannot inadver
 Removing a course or disconnecting Canvas preserves course data. Deleting a conversation removes its history, but shared cached originals can remain. Restoring preserves both old and restored data until you remove a copy. For complete removal, export what you need, quit Folio, remove its app-owned data/backups and revoke provider credentials. Uninstalling the app alone does not remove its data. Do not delete external workspace folders accidentally.
 
 Folio has no built-in advertising or product analytics collector. Local diagnostics can contain paths, questions and source details; review before sharing. OS crash reporting, Electron and connected services have their own policies. Updates are obtained manually from [Releases](https://github.com/Bensssonxx/folio-releases/releases). Do not place credentials, private course files or full chats in public issues.
+
+## Optional document support
+
+After you approve a first-use prompt, Folio downloads a pinned LibreOffice release from The Document Foundation and its HTTPS mirror network. Those servers receive ordinary download request information; no course files or account tokens are sent. Folio verifies the exact download checksum, publisher and macOS trust. It stores the converter in a shared app-owned components folder, separate from course databases and backups. Switching data spaces reuses it. A temporary installer is removed after installation or failure.

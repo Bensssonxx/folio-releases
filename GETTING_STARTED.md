@@ -1,6 +1,6 @@
 # Getting started with Folio
 
-This guide is for the ad-hoc signed 0.9.0-beta.4 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
+This guide is for the ad-hoc signed 0.9.0-beta.5 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
 
 1. Download and install
 
@@ -41,3 +41,11 @@ Expired Canvas tokens require reconnecting. ChatGPT authorization or eligibility
 Report version/build, error category and reproduction steps with synthetic data in [Issues](https://github.com/Bensssonxx/folio-releases/issues). Do not post credentials, private course materials or full chats. Follow [Security](SECURITY.md) for vulnerabilities.
 
 Beta.3 corrected the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. A second Mac has not yet verified this release.
+
+## Optional PowerPoint page support
+
+The main installer no longer includes the full Office converter. Opening a PowerPoint slide file asks to download document support: 298 MB from The Document Foundation, about 798 MB installed. You can choose Not now or cancel the progress window. PDF, text and Word text reading remain available. After installation, the same version is reused without another download, including across local data spaces. Settings → local storage includes Document support separately. An internet connection and about 1.5 GB free temporary space are needed for installation; offline use works once installed.
+
+Folio checks the pinned SHA-256, official publisher signature and macOS trust before making this support executable available. A failed verification is never installed. Course files are not uploaded during download. The base application is smaller; installing the optional component later adds its size to your Mac.
+
+Background indexing continues with readable materials while optional support is absent. After installation, failed slide indexes are retried locally; prepared originals are reused.
