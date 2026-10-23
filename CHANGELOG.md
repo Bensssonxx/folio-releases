@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0-beta.4 — 2026-10-23
+
+- Restore Continue with ChatGPT in both the local test and public build, using direct browser authorization and account-provided model access.
+- Keep the API-key option and explicit separate billing; authorization, eligibility or quota errors do not silently switch connections.
+- Clarify the subscription eligibility error. Preserve course data, credentials, internal application identity and all existing reading/selection behavior.
+- Retain the complete ad-hoc bundle seal from beta.3. Apple Developer ID and notarization are still unavailable.
+
 ## 0.9.0-beta.3 — 2026-10-21
 
 - Repair the whole macOS bundle signature and resource seal; preserve the official Office engine and reading binaries.

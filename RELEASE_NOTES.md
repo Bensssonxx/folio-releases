@@ -1,9 +1,11 @@
-# Folio 0.9.0-beta.3 — bundle signature repair, API-only beta
+# Folio 0.9.0-beta.4 — ChatGPT sign-in preview restored
 
-Fixes the incomplete application bundle signature in beta.2 that could cause a damaged-app warning even when the download checksum matched. Electron frameworks/helpers and the outer app now have a complete ad-hoc signature. The packaging and installer checks require whole-bundle signature integrity; the separate official Office engine is preserved unchanged.
+Choose **ChatGPT → Continue with ChatGPT** in Chat → Connect AI / AI settings, authorize in your browser, then select an available model. The local test build and public installer use the same tested application. You can still explicitly choose your own API key with separate billing. Failed subscription access never silently enables API billing.
 
-**This is an unsigned-by-Apple test build: it is not Developer ID-signed and has not been notarized.** Ad-hoc integrity does not grant automatic Gatekeeper approval. macOS may still block first launch; follow the per-app steps in [Getting started](https://github.com/Bensssonxx/folio-releases/blob/main/GETTING_STARTED.md) only if you trust the verified download. Do not disable global security protections. Stop and report a persistent damaged/malware warning.
+OpenAI enforces account, workspace and app eligibility. This preview does not guarantee subscription access for every account and does not claim partner approval. The public beta is free; future pricing is undecided. No new login, provider request or course-content sharing occurs merely by installing the app. Existing saved connections may be refreshed after you choose them.
 
-Apple Silicon, macOS 14+. Bring your own API key with separate API billing. ChatGPT subscription login remains disabled. Existing data, internal identity and legacy credentials are preserved; quit the old app before opening this version. No changes to course/feedback selection, AI context or reading behavior.
+Existing courses, chats, private-material selections, restored-profile choices and credential identities stay compatible. Quit the old app before launching this version. The installer contains no personal course or account data. Follow the [Getting started guide](https://github.com/Bensssonxx/folio-releases/blob/main/GETTING_STARTED.md) for both connection methods.
 
-The installer includes the same official LibreOffice 26.2.6.3 engine, third-party notices and source access. Folio implementation source remains private. Local synthetic acceptance does not substitute for a second Mac or fresh real API account.
+**Apple Silicon, macOS 14+. Complete ad-hoc integrity signature; no Apple Developer ID or notarization.** macOS may require explicit per-app approval on first launch. Do not disable global security protections. Beta.2 had an incomplete bundle seal; use this version or beta.3 instead.
+
+Validation uses synthetic OAuth responses, isolated UI profiles and offline packaged checks; it does not establish successful authorization for a fresh real account or installation on a second Mac. The official Office engine and third-party notices/source access remain included. This repository publishes installers and documentation; Folio implementation source remains private.

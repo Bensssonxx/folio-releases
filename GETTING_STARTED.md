@@ -1,6 +1,6 @@
 # Getting started with Folio
 
-This guide is for the API-only, ad-hoc signed 0.9.0-beta.3 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
+This guide is for the ad-hoc signed 0.9.0-beta.4 test build. Requirements: Apple Silicon Mac, macOS 14+, UNC Canvas access and internet for Canvas/AI. No Python, Node.js or terminal setup is needed to run the app.
 
 1. Download and install
 
@@ -16,9 +16,11 @@ Choose Connect Canvas on Home. In UNC Canvas, open Account → Settings → Appr
 
 Choose Add course. Accessible materials prepare on this Mac automatically, independently of Save to Mac. Initial downloads/indexing may take longer. Course materials shows ready, failed, unavailable and unsupported sources. Update checks for changes; retry retries failed preparation.
 
-4. Connect your API account
+4. Choose your AI connection
 
-Open Chat → AI settings. Enter your own OpenAI API key and a model ID available to that API account. API billing is separate from a ChatGPT subscription. No key is provided with the installer. Saving a key does not send course material; review the course sharing message before Enable and send. ChatGPT subscription sign-in is not available in this beta, and existing subscription credentials are preserved without being read or changed.
+Open Chat → Connect AI (or AI settings). Choose **ChatGPT → Continue with ChatGPT** to authorize Folio in your browser. Review the account and permissions on OpenAI's page; your password is never entered into Folio. Return to Folio and choose a model from the list returned for that account. Access depends on the account, workspace and app eligibility enforced by OpenAI; a subscription alone does not guarantee access. You can cancel, change accounts or sign out in AI settings.
+
+Alternatively choose **API key → Pay separately**, enter your own OpenAI API key and a model ID available to that API account, then explicitly save it to use the API. API billing is separate from a ChatGPT subscription. Folio does not switch to API billing automatically if subscription access fails. No account or key is provided with the installer. Connecting alone does not send course material; review the course sharing message before Enable and send.
 
 5. Ask and check
 
@@ -28,14 +30,14 @@ Choose sources groups Files, Assignments, Announcements and Pages & links. Under
 
 ## Upgrading from CourseVault
 
-Quit the old app before launching Folio. The data folder, restored-profile pointer and credential identity remain compatible; do not move or rename them. The apps cannot share that profile simultaneously. Existing ChatGPT connection files remain stored for a compatible local build; this beta uses a separate API connection. Refresh Calendar to verify previously inferred dates. Keep a backup and the previous app until you have checked the upgrade.
+Quit the old app before launching Folio. The data folder, restored-profile pointer and credential identity remain compatible; do not move or rename them. The apps cannot share that profile simultaneously. Existing ChatGPT connections remain on this Mac; choose one explicitly or authorize again if required. Refresh Calendar to verify previously inferred dates. Keep a backup and the previous app until you have checked the upgrade.
 
 ## Recovery and support
 
 Settings shows local storage and the data folder. Removing a course hides it without erasing its files. Backup exports app-owned data without credentials; user-selected external folders need separate backups. Restore makes a verified new copy; activate it explicitly and reconnect the same Canvas account.
 
-Expired Canvas tokens require reconnecting. API errors require checking the account's key, billing, model access and limits. Stop remains available during long answers; network/model time varies. Unsupported/inaccessible sources are disclosed. A changed original can invalidate an old reference.
+Expired Canvas tokens require reconnecting. ChatGPT authorization or eligibility errors are shown in AI settings; check the selected account and its connected-app permissions. API errors require checking the account's key, billing, model access and limits. Stop remains available during long answers; network/model time varies. Unsupported/inaccessible sources are disclosed. A changed original can invalidate an old reference.
 
 Report version/build, error category and reproduction steps with synthetic data in [Issues](https://github.com/Bensssonxx/folio-releases/issues). Do not post credentials, private course materials or full chats. Follow [Security](SECURITY.md) for vulnerabilities.
 
-Beta.3 corrects the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. A second Mac has not yet verified this release.
+Beta.3 corrected the incomplete bundle signature in beta.2. It does not add Apple Developer ID or notarization. macOS may still require explicit approval for this specific app; no global security setting changes are needed or recommended. A second Mac has not yet verified this release.

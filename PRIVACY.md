@@ -1,6 +1,6 @@
 # Privacy and AI sharing
 
-Updated 2026-10-20 for the API-only unsigned beta.
+Updated 2026-10-23 for beta.4.
 
 Folio stores its course catalog, prepared originals, keyword/semantic indexes, chats, attachments and history on this Mac. Personal Save and automatic Chat preparation are separate. External workspace folders stay where you selected them. Backups can contain private course/chat data; protect them.
 
@@ -10,11 +10,13 @@ Folio sends read requests to your configured Canvas school and downloads materia
 
 ## Credentials and AI
 
-Canvas and API credentials use macOS-backed Electron secure storage in the main process. Keys are not exposed to the web interface or included in profile backups. Disconnection removes the local connection; revoke tokens/keys separately with their provider when needed. Protect your Mac account.
+Canvas, ChatGPT and API credentials use macOS-backed Electron secure storage in the main process. Keys are not exposed to the web interface or included in profile backups. Disconnection removes the local connection; revoke tokens/keys separately with their provider when needed. Protect your Mac account.
 
-This build uses your own API account and separate billing. ChatGPT subscription login and requests are disabled. Legacy ChatGPT connection files are preserved but are not read, decrypted, migrated or modified by that disabled connection path. This is not a statement that Folio has approval for closed-source subscription sharing.
+You choose ChatGPT subscription access or your own API key. ChatGPT sign-in opens OpenAI's authorization page in your system browser and uses PKCE, a local loopback callback and encrypted credentials for the selected local profile. OpenAI receives the OAuth registration/authorization request and decides eligibility. Selecting a saved connection may refresh its authorization or available model list. Sign-out attempts remote revocation and clears local tokens; if revocation cannot be confirmed, Folio tells you to review connected-app permissions. No Folio-operated authentication relay is used.
 
-After you enable AI for a course and press Send, Folio sends the question, permitted conversation context, material titles, supporting text and applicable document/page images to the displayed API provider. Complete reading may send complete selected originals over multiple requests. Previewing or attaching alone does not send them. A changed account/provider/model can require consent again. Turn sharing off in AI settings or disconnect to prevent future requests. Content already sent cannot be recalled. Provider retention, account controls and billing are governed by its terms; Folio does not promise zero provider retention.
+An API key uses separate API billing, outside a ChatGPT subscription. Connection or eligibility errors never silently switch billing to an API key. Availability of the subscription preview is not a claim of OpenAI partner approval or access for every account.
+
+After you enable AI for a course and press Send, Folio sends the question, permitted conversation context, material titles, supporting text and applicable document/page images to the displayed AI connection. Complete reading may send complete selected originals over multiple requests. Previewing or attaching alone does not send them. A changed account/provider/model can require consent again. Turn sharing off in AI settings or disconnect to prevent future requests. Content already sent cannot be recalled. Provider retention, account controls and billing are governed by its terms; Folio does not promise zero provider retention.
 
 ## Personal submissions and feedback
 
