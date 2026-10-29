@@ -1,5 +1,10 @@
 # Folio for UNC
 
+## [Visit the Folio website →](https://bensssonxx.github.io/folio/)
+
+**[bensssonxx.github.io/folio](https://bensssonxx.github.io/folio/)** · [Download for Mac](https://github.com/Bensssonxx/folio-releases/releases/tag/v1.0.0)
+
+
 Your courses, ready to talk about.
 
 Folio is a local-first Mac workspace for Canvas materials, assignments, instructor feedback and AI conversations. Answers link back to the original material. Saving your own copies is optional.
